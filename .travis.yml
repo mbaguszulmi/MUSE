@@ -1,0 +1,25 @@
+os:
+  - linux
+language: node_js
+node_js:
+  - "stable"
+cache:
+  yarn: true
+  directories:
+    - node_modules
+install:
+  - echo "[Log] Installing dependencies..."
+  - yarn install
+script:
+  - echo "[Log] Starting test..."
+  - yarn test
+before_deploy:
+  - echo "[Log] Building project"
+  - yarn build
+deploy:
+  provider: heroku
+  skip_cleanup: true
+  api_key:
+    secure: "Hzi8SiqqiO8qf6/ND1DgN7PG2ruz2kXDfLWR5UPpsri4fAKuZG4CIUCVs8BqIV0dj4EY5C/mHRVp1pXbZnTlp00WMt6bDP+j0KcBpIQZr+Dm/WXw7epbvHHNrjxOQOb8MSNs9GUpKkX9Fkijf31gUhF70VjvIuhzahz1ZYSXI7XjbvfiN3EqMO0YqPGp2U9obSv0DzbtnR5ZLm+Ztz+woFX0T/plT8/Gm3HMvjFgZhVHRfDFwD3AtZHhDC2wwEUOLF3hZdzL7a6y17z/RDtkQH02S9cgU4RutI3PiNZAiVUEfmEZp3RAGDjRCBblCg4w8x9zlEwRN6Ei5IH+OyeBaf9Yh9+p92jwkqod2Mjfx2ARLwAloc20d9xU5YQ6h36ZRqDxJwBvv911WOjype2JbeK9QVo5s5jxqUkMRf347P5E/rcIoxZMyWGCYBEnC31zDoAzrSaiGRK0+kleVU99FWF6UMP6ogDsCjvm9U0alLf/AoqmEgjqB9VzvOpQJM2xdAkFR0KslcINR6QQ5VMiDKGE+HdfYYV/X13g0aaOrY8ben0TIUFdo+PIVH4k/8Q5cH1YIvkbBaFodqwcFtFbQAA3cEoNdwCOG5gP5/hbNirWA0C3/Z7d4OMWnvIA/u29df4WCTdDE+axZSq14ug3Oqo7E3TQL/vCRoQlLXZx13s="
+  on:
+    branch: master
