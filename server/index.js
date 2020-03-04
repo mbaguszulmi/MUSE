@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 app.use(express.static(path.join(__dirname, '..', 'build')))
 
 app.get('/ping', (req, res) => {
-    return res.send('pong')
+    return res.send('Hello World')
 })
 
 app.get('/', (req, res) => {
