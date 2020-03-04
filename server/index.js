@@ -1,7 +1,8 @@
 const express = require('express')
-const bodyParser = require('body-parser')
 const path = require('path')
 const app = express()
+const mongoose = require('mongoose')
+
 app.use(express.static(path.join(__dirname, '..', 'build')))
 
 app.get('/ping', (req, res) => {
