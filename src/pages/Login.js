@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Login extends Component {
   render() {
@@ -27,16 +28,16 @@ class Login extends Component {
                             <label class="custom-control-label" for="customCheck">Remember Me</label>
                           </div>
                         </div>
-                        <a href="admin" class="btn btn-primary btn-user btn-block">
+                        <Link to="/admin" class="btn btn-primary btn-user btn-block">
                           Login
-                      </a>
+                        </Link>
                       </form>
                       <hr />
                       <div class="text-center">
-                        <a id="forgotPassword" class="small" href="forgot-password">Forgot Password?</a>
+                        <a id="forgotPassword" class="small"><Link to="/forgot-password">Forgot Password?</Link></a>
                       </div>
                       <div class="text-center">
-                        <a id="createAccount" class="small" href="registration">Create an Account!</a>
+                        <a id="createAccount" class="small"><Link to="/registration">Create an Account!</Link></a>
                       </div>
                     </div>
                   </div>

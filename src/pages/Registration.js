@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Registration extends Component {
   render() {
@@ -29,16 +30,16 @@ class Registration extends Component {
                             <input type="password" class="form-control form-control-user" id="password2" name="password2" placeholder="Repeat Password" required />
                           </div>
                         </div>
-                        <a href="login" class="btn btn-primary btn-user btn-block">
+                        <Link to="/login" class="btn btn-primary btn-user btn-block">
                           Register Account
-                        </a>
+                          </Link>
                       </form>
                       <hr />
                       <div class="text-center">
-                        <a class="small" href="forgot-password">Forgot Password?</a>
+                        <a class="small"><Link to="/forgot-password">Forgot Password?</Link></a>
                       </div>
                       <div class="text-center">
-                        <a class="small" href="login">Already have an account? Login!</a>
+                        <a class="small"><Link to="/login">Already have an account? Login!</Link></a>
                       </div>
                     </div>
                   </div>

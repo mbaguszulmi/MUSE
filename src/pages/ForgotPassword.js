@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class ForgotPassword extends Component {
     render() {
@@ -22,16 +23,16 @@ class ForgotPassword extends Component {
                                                 <div class="form-group">
                                                     <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." />
                                                 </div>
-                                                <a href="login.html" class="btn btn-primary btn-user btn-block">
+                                                <Link to="/login" class="btn btn-primary btn-user btn-block">
                                                     Reset Password
-                                                </a>
+                                                </Link>
                                             </form>
                                             <hr />
                                             <div class="text-center">
-                                                <a class="small" href="registration">Create an Account!</a>
+                                                <a class="small"><Link to="/registration">Create an Account!</Link></a>
                                             </div>
                                             <div class="text-center">
-                                                <a class="small" href="login">Already have an account? Login!</a>
+                                                <a class="small"><Link to="/login">Already have an account? Login!</Link></a>
                                             </div>
                                         </div>
                                     </div>

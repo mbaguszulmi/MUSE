@@ -5,7 +5,8 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import LoginAdmin from '../pages/Login';
 import Registration from '../pages/Registration';
 import Admin from '../pages/Admin';
-import ForgotPassword from '../pages/ForgotPassword'
+import ForgotPassword from '../pages/ForgotPassword';
+import Dashboard from '../components/Dashboard';
 
 const MainRoute = () => {
     return (
