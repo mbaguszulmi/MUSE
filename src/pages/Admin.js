@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import '../assets/css/admin.css'
 import AdminRouter from '../routes/admin-route';
 
 //component
