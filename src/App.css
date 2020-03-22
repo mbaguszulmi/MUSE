@@ -1,6 +1,11 @@
-/* content */
-#content {
-    color: black;
+body {
+    color: black !important;
+}
+
+/* Admin */
+/* message */
+.message span {
+    color: black !important;
 }
 
 /* account */
@@ -12,3 +17,6 @@
     border-radius: 10px;
     color: black;
 }
+
+
+/* Siswa */

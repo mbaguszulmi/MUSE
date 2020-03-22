@@ -4,9 +4,9 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 //pages
 import LoginAdmin from '../pages/Login';
 import Registration from '../pages/Registration';
-import Admin from '../pages/Admin';
+import Admin from '../pages/admin/Admin';
 import ForgotPassword from '../pages/ForgotPassword';
-import Dashboard from '../components/Dashboard';
+import DetailVideo from '../pages/student/DetailVideo'
 
 const MainRoute = () => {
     return (
@@ -14,8 +14,9 @@ const MainRoute = () => {
             <Switch>
                 <Route path="/login" component={LoginAdmin} />
                 <Route path="/registration" component={Registration} />
-                <Route path="/admin" component={Admin} />
                 <Route path="/forgot-password" component={ForgotPassword} />
+                <Route path="/admin" component={Admin} />
+                <Route path="/student" component={DetailVideo} />
             </Switch>
         </BrowserRouter>
     );

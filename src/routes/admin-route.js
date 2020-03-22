@@ -1,14 +1,14 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Dashboard from '../components/Dashboard';
-import Settings from '../components/Settings';
-import Management from '../components/Management';
-import Payment from '../components/Payment';
-import DropdownAccount from '../pages/Account';
-import Message from '../components/Message';
-import ContentMessage from '../components/Content-mes';
-import Notification from '../components/Notification'
+import Dashboard from '../pages/admin/paginations/Dashboard';
+import Settings from '../pages/admin/paginations/Settings';
+import Management from '../pages/admin/paginations/Management';
+import Payment from '../pages/admin/paginations/Payment';
+// import UserInformation from '../pages/admin/UserInformation';
+import Message from '../pages/admin/paginations/Message';
+import ContentMessage from '../pages/admin/Content-mes';
+import Notification from '../pages/admin/paginations/Notification'
 
 const AdminRouter = () => {
     return (
@@ -17,7 +17,7 @@ const AdminRouter = () => {
             <Route path="/admin/settings" component={Settings} />
             <Route path="/admin/management" component={Management} />
             <Route path="/admin/payment" component={Payment} />
-            <Route path="/admin/dd-account" component={DropdownAccount} />
+            {/* <Route path="/admin/user-information" component={UserInformation} /> */}
             <Route path="/admin/message" component={Message} />
             <Route path="/admin/content-mes" component={ContentMessage} />
             <Route path="/admin/notification" component={Notification} />

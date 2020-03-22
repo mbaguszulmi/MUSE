@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import AdminRouter from '../routes/admin-route';
+import AdminRouter from '../../routes/admin-route';
 
 //component
-import NavAdmin from '../components/NavAdmin';
-import Sidebar from '../components/SidebarAdmin';
+import Sidebar from '../../components/admin/SidebarAdmin';
+import TopBarAdmin from '../../components/admin/TopBarAdmin';
 
 
 class Admin extends Component {
@@ -12,13 +12,9 @@ class Admin extends Component {
         return (
             <div id="wrapper">
                 <Sidebar />
-
-                {/* Content Wrapper */}
                 <div id="content-wrapper" class="d-flex flex-column" >
-
-                    {/* Main Content */}
-                    <div id="content" >
-                        <NavAdmin />
+                    <div id="content">
+                        <TopBarAdmin />
                         <div class="container-fluid">
                             <AdminRouter />
                         </div>

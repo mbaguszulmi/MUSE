@@ -41,7 +41,7 @@ class Registration extends Component {
                         <label class="mr-3" for="kuliah">Kuliah</label>
                         <input class="mr-2" type="radio" id="kerja" name="status" value="kerja" />
                         <label class="mr-3" for="kerja">Kerja</label>
-                        <Link to="/login" class="btn p-2 btn-primary btn-block mt-4">Buat akun saya</Link>
+                        <Link to="/login" id="create-account" class="btn p-2 btn-primary btn-block mt-4">Buat akun saya</Link>
 
                         <a href="index.html" class="btn btn-outline-primary btn-block mt-4 mb-3 p-2">
                           <i class="fab fa-google fa-fw"></i> Masuk dengan Google

@@ -27,12 +27,12 @@ class Login extends Component {
                         <h1 class="text-gray-900 mb-0 font-weight-bold">Masuk</h1>
                         <p class="mb-4">Masuk dan mulai kelasmu</p>
                         <form class="user">
-                          <a href="index.html" class="btn btn-primary btn-block mb-3 p-2">
+                          <Link to="/admin" id="btn-google" class="btn btn-primary btn-block mb-3 p-2">
                             <i class="fab fa-google fa-fw"></i> Masuk dengan Google
-                          </a>
+                          </Link>
                           <h6 class="font-weight-bold text-center">Atau</h6>
                           <div class="form-group">
-                            <label for="email" class="font-weight-bold">Alamat Email</label>
+                            <label for="email" claValidasiss="font-weight-bold">Alamat Email</label>
                             <input type="text" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Email Address..." name="email" required />
                           </div>
                           <div class="form-group">
@@ -54,9 +54,14 @@ class Login extends Component {
                               </div>
                             </div>
                           </div>
-                          <Link to="/registration" class="btn btn-outline-secondary btn-block p-2">
-                            Daftar akun baru
+                          <Link to="/admin" id="login-button" class="btn btn-outline-secondary btn-block p-2">
+                            Masuk
                         </Link>
+                          <div class="col-lg-12 d-flex justify-content-center mt-2">
+                            <div class="text-center">
+                              <Link to="/registration" id="registration">Daftar akun baru!</Link>
+                            </div>
+                          </div>
                         </form>
                       </div>
                     </div>

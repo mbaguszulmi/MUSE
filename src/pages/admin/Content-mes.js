@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Content } from 'react-mdl';
 
-import KementrianAgama from '../assets/img/kementrian-agama.png';
-import ArrowRight from '../assets/icons/arrow-alt-right.svg';
-import Message from '../assets/img/surat-dinas-pemerintah.jpg';
+import KementrianAgama from '../../assets/img/kementrian-agama.png';
+import Message from '../../assets/img/surat-dinas-pemerintah.jpg';
 
 class ContentMessage extends Component {
     render() {
@@ -22,8 +21,8 @@ class ContentMessage extends Component {
                         </div>
                         <div class="col-lg-4 offset-lg-2 text-right mt-2">
                             <span class="small mr-3">3 Maret 2020 21.30 (9 Hari yang lalu)</span>
-                            <Link to=""><i class="fas fa-reply mr-3"></i></Link>
-                            <Link to=""><i class="fas fa-ellipsis-v"></i></Link>
+                            <Link to=""><i class="fas fa-reply mr-3" style={{ color: '#000' }}></i></Link>
+                            <Link to=""><i class="fas fa-ellipsis-v" style={{ color: '#000' }}></i></Link>
                         </div>
                     </div>
                 </header>
@@ -39,7 +38,7 @@ class ContentMessage extends Component {
                             </div>
                             <div class="col-lg-12 mt-4">
                                 <button class="btn btn-outline-secondary"><i class="fas fa-reply mr-3"></i>Balas</button>
-                                <button class="btn btn-outline-secondary ml-2"><img src={ArrowRight} width="16px" class="mt-n1 mr-2"></img>Teruskan</button>
+                                <button class="btn btn-outline-secondary ml-2"><i class="fas fa-long-arrow-alt-right mr-2"></i>Teruskan</button>
                             </div>
                         </div>
                     </div>
