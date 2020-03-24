@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import AdminRouter from '../../routes/admin-route';
+import AdminRouter from '../routes/admin-route';
 
 //component
-import Sidebar from '../../components/admin/SidebarAdmin';
-import TopBarAdmin from '../../components/admin/TopBarAdmin';
+import Sidebar from '../components/admin/SidebarAdmin';
+import TopBarAdmin from '../components/admin/TopBarAdmin';
 
 
 class Admin extends Component {
@@ -20,7 +20,6 @@ class Admin extends Component {
                         </div>
                     </div>
                 </div>
-
             </div>
         );
     }

@@ -1,5 +1,6 @@
 body {
     color: black !important;
+    position: relative;
 }
 
 /* Admin */
@@ -8,15 +9,47 @@ body {
     color: black !important;
 }
 
-/* account */
-.account {
+/* user information */
+.drop-user {
     position: absolute;
     right: 20px;
     top: 70px;
     width: 300px;
     border-radius: 10px;
     color: black;
+    opacity: 0;
+}
+
+.drop-user.aktif{
+    opacity: 1;
+    z-index: 1;
 }
 
 
-/* Siswa */
+/* Student */
+/* detail video */
+
+.detail-video .content {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height: 900px;
+}
+
+.detail-video .jumbotron {
+    height: 450px;
+}
+
+.chat-mentor input {
+    background-color: #F2F2F2;
+}
+
+.chat-mentor .icon1 {
+    left: 27px;
+    margin-top: 10px;
+}
+
+.chat-mentor .icon2 {
+    right: 30px;
+    margin-top: 10px;
+}

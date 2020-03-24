@@ -1,7 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import $ from 'jquery';
 
-import DDUserInformation from '../../pages/admin/UserInformation';
+import UserInformation from '../../pages/admin/UserInformation';
+
+function ButtonUserInformation() {
+    return (
+        $('#user-drop').on('click', function () {
+            console.log('ok');
+        })
+    )
+}
 
 class TopBar extends Component {
     render() {
@@ -11,6 +20,7 @@ class TopBar extends Component {
                     <Notifications />
                     <Messages />
                     <div class="topbar-divider d-none d-sm-block"></div>
+                    <BtnUserInformation />
                 </ul >
             </nav >
         );
@@ -41,15 +51,20 @@ function Messages() {
     );
 }
 
-function UserInformation() {
+function BtnUserInformation() {
+    $('#user-information').on('click', function () {
+        $('.drop-user').addClass('aktif');
+    })
+    $('.drop-user.aktif').on('click', function () {
+        console.log('ok');
+    });
     return (
         <li class="nav-item dropdown no-arrow">
-            <Link to="/admin/user-information" class="nav-link dropdown-toggle" id="userDropdown" data-toggle="modal" data-target="#modalAccount">
+            <a class="nav-link dropdown-toggle" href="#" id="user-information" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
                 <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60" />
-            </Link>
-            {/* Dropdown - User Information */}
-            <DDUserInformation />
+            </a>
+            <UserInformation />
         </li>
     );
 }
