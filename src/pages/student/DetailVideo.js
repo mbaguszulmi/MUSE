@@ -17,7 +17,7 @@ class DetailVideo extends Component {
                         <div class="row">
                             <div class="col-lg-9">
                                 <div class="jumbotron mr-n5"></div>
-                                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                <nav class="navbar navbar-expand-lg navbar-light    ">
                                     <div class="collapse navbar-collapse" id="navbarNav">
                                         <ul class="navbar-nav">
                                             <li class="nav-item mr-3">

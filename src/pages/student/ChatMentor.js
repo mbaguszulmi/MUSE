@@ -10,8 +10,8 @@ class ChatMentor extends Component {
                     <div class="col-lg-6 offset-lg-3">
                         <form action="" method="post">
                             <div class="form-group text-secondary">
-                                <i class="icon1 fas fa-paperclip position-absolute"></i>
-                                <i class="icon2 far fa-smile position-absolute"></i>
+                                <i class="icon-clip fas fa-paperclip position-absolute"></i>
+                                <i class="icon-smile far fa-smile position-absolute"></i>
                                 <input type="text" class="form-control rounded-pill pl-5" id="chat-mentor" name="chat-mentor" placeholder="Mulai Percakapan" required />
                             </div>
                         </form>

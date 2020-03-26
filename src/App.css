@@ -40,16 +40,22 @@ body {
     height: 450px;
 }
 
-.chat-mentor input {
+.detail-video input {
     background-color: #F2F2F2;
 }
 
-.chat-mentor .icon1 {
+.chat-mentor .icon-clip {
     left: 27px;
     margin-top: 10px;
 }
 
-.chat-mentor .icon2 {
+.chat-mentor .icon-smile {
     right: 30px;
     margin-top: 10px;
+}
+
+.forum-class .icon-search {
+    right: 30px;
+    margin-top: 10px;
+    color: #FF9160;
 }
