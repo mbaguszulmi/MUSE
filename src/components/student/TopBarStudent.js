@@ -1,34 +1,52 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { Dropdown } from 'react-bootstrap';
+
+import UserInformation from '../../pages/admin/UserInformation';
 
 class TopBarStudent extends Component {
     render() {
         return (
-            <nav class="navbar navbar-expand-lg navbar-light topbar">
-                <Link to="#" class="navbar-brand ml-2"><i class="fas fa-bars"></i></Link>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link disabled font-weight-bold" style={{ color: "black" }}>Muse</a>
-                        </li>
-                        <div class="topbar-divider d-none d-sm-block"></div>
-                        <li class="nav-item">
-                            <a class="nav-link disabled font-weight-bold" style={{ color: "blue" }}>Belajar Desain Aplikasi E-Banking</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav mr-2">
-                        <li class="nav-item">
-                            <button type="button" class="btn btn-outline-primary pl-3 pr-3 mr-4"><i class="fas fa-angle-left mr-1"></i>Kembali</button>
-                        </li>
-                        <li class="nav-item">
-                            <button type="button" class="btn btn-primary pr-3 pl-3">Bagikan kelas</button>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <div class='topbar-student position-fixed'>
+                <nav class="navbar-expand-lg navbar-light bg-white p-4">
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <div class="col-lg-4">
+                            <form action="#" method="#">
+                                <div class="form-group text-secondary">
+                                    <Link to="#"><i class="icon-search fas fa-search position-absolute"></i></Link>
+                                    <input type="text" class="form-control rounded-pill pl-4" id="search-class" name="search-class" placeholder="Skill apa yang ingin kamu pelajari" />
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-6 offset-lg-3">
+                            <ul class="navbar-nav mr-auto mt-n2">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class='fas fa-th-large mr-2' /> <span> Kelas Lain </span> </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class='fas fa-question-circle' /> </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class='fas fa-shopping-cart' /> </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class='fas fa-bell' /> </a>
+                                </li>
+                                <li class="nav-item dropdown no-arrow">
+                                    <Dropdown>
+                                        <Dropdown.Toggle id="dropdown-basic">
+                                            <img class="img-profile rounded-circle ml-4" src="https://source.unsplash.com/QAB-WJcbgJk/60x60" width="40px" />
+                                        </Dropdown.Toggle>
+                                        <Dropdown.Menu id="dd-menu">
+                                            <UserInformation />
+                                        </Dropdown.Menu>
+                                    </Dropdown>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         );
     }
 }

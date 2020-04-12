@@ -1,11 +1,11 @@
 import React from 'react';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 // pages
-import AboutClass from '../pages/student/AboutClass';
-import ChatMentor from '../pages/student/ChatMentor';
-import ForumClass from '../pages/student/ForumClass';
-import FileAttachement from '../pages/student/FileAttachement';
+import AboutClass from '../pages/student/detail-video/AboutClass';
+import ChatMentor from '../pages/student/detail-video/ChatMentor';
+import ForumClass from '../pages/student/detail-video/ForumClass';
+import FileAttachement from '../pages/student/detail-video/FileAttachement';
 
 const VideoRouter = () => {
     return (

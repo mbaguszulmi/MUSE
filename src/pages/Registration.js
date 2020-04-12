@@ -12,8 +12,8 @@ class Registration extends Component {
                 <div class="row">
                   <div class="col-lg-12">
                     <div class="p-5">
-                      <Link to="/login">
-                        <i class="fas fa-angle-left"></i>
+                      <Link to="/" class="text-decoration-none">
+                        <i class="fas fa-angle-left mr-2"></i>
                         Sudah punya akun</Link>
                       <h1 class="font-weight-bold text-gray-900 mt-4">Daftar Akun</h1>
                       <p>Upgrade skillmu dan dapatkan pekerjaan impian</p>
@@ -41,7 +41,7 @@ class Registration extends Component {
                         <label class="mr-3" for="kuliah">Kuliah</label>
                         <input class="mr-2" type="radio" id="kerja" name="status" value="kerja" />
                         <label class="mr-3" for="kerja">Kerja</label>
-                        <Link to="/login" id="create-account" class="btn p-2 btn-primary btn-block mt-4">Buat akun saya</Link>
+                        <Link to="/" id="create-account" class="btn p-2 btn-primary btn-block mt-4">Buat akun saya</Link>
 
                         <a href="index.html" class="btn btn-outline-primary btn-block mt-4 mb-3 p-2">
                           <i class="fab fa-google fa-fw"></i> Masuk dengan Google

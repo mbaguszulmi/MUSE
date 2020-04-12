@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class UserInformation extends Component {
     render() {
         return (
-            <div class="drop-user">
+            <div class="dropdown-user">
                 <div class="dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                     <div class="shadow p-3 d-flex justify-content-end bg-light">
                         <div class="row text-center">
@@ -21,7 +21,7 @@ class UserInformation extends Component {
                             </div>
                             <hr class="btn-block" />
                             <div class="col-lg-10 offset-lg-1">
-                                <Link to="/login" class="btn btn-outline-secondary btn-block"><span class="font-weight-bold">Logout akun</span></Link>
+                                <Link to="/" class="btn btn-outline-secondary btn-block"><span class="font-weight-bold">Logout akun</span></Link>
                             </div>
                         </div>
                     </div>

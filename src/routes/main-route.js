@@ -12,7 +12,7 @@ const MainRoute = () => {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/login" component={LoginAdmin} />
+                <Route exact path="/" component={LoginAdmin} />
                 <Route path="/registration" component={Registration} />
                 <Route path="/forgot-password" component={ForgotPassword} />
                 <Route path="/admin" component={Admin} />

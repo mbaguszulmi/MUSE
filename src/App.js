@@ -23,7 +23,7 @@ class App extends Component {
           <link href="./assets/css/sb-admin-2.min.css" rel="stylesheet" />
         </head>
 
-        <body>
+        <body class="position-relative">
 
           <Routes />
 

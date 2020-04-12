@@ -6,7 +6,7 @@ import Settings from '../pages/admin/paginations/Settings';
 import Management from '../pages/admin/paginations/Management';
 import Payment from '../pages/admin/paginations/Payment';
 import Message from '../pages/admin/paginations/Message';
-import ContentMessage from '../pages/admin/Content-mes';
+import ContentMessage from '../pages/admin/ContentMesage';
 import Notification from '../pages/admin/paginations/Notification';
 
 const AdminRouter = () => {

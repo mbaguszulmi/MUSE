@@ -32,7 +32,7 @@ class Login extends Component {
                           </Link>
                           <h6 class="font-weight-bold text-center">Atau</h6>
                           <div class="form-group">
-                            <label for="email" claValidasiss="font-weight-bold">Alamat Email</label>
+                            <label for="email" class="font-weight-bold">Alamat Email</label>
                             <input type="text" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Email Address..." name="email" required />
                           </div>
                           <div class="form-group">
@@ -54,7 +54,7 @@ class Login extends Component {
                               </div>
                             </div>
                           </div>
-                          <Link to="/admin" id="login-button" class="btn btn-outline-secondary btn-block p-2">
+                          <Link to="/student" id="login-button" class="btn btn-outline-secondary btn-block p-2">
                             Masuk
                         </Link>
                           <div class="col-lg-12 d-flex justify-content-center mt-2">
