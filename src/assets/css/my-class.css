@@ -1,0 +1,66 @@
+.my-class .content {
+    margin-top: 100px;
+    margin-left: 230px;
+}
+
+.my-class .header {    
+    width: 100%;
+    height: 320px;
+    background-color: white;
+    padding-top: 10px;
+    border-bottom-left-radius: 8px;
+}
+
+.my-class .jumbotron {
+    width: 690px;
+    height: 210px;
+    background-color: #FFD9B7;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.my-class .jumbotron h1 {
+    margin-top: 10px;
+    color: #E98B61;
+    font-weight: bold;
+}
+
+.my-class .jumbotron span {
+    font-weight: bold;
+}
+
+.my-class .jumbotron img {
+    margin-top: -12px;
+}
+
+.my-class .button {
+    background-color: #E98B61;
+    color: white;
+}
+
+.sidebar-student-right span {
+    color: #FF9160;
+}
+
+.sidebar-student-right .icon-certificate {
+    box-sizing: border-box;
+    padding: 15px 20px;
+    background-color: #CBE4FF;
+    color: #18A0FB;
+    font-size: 24px;
+    border-radius: 8px;
+}
+
+.sidebar-student-right .icon-badge {
+    box-sizing: border-box;
+    background-color: #FFDAC9;
+    color: #FF9567;
+    font-size: 24px;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+.my-class .content ul li:hover {
+    background-color: #FF9160;
+    border-radius: 8px;
+}

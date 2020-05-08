@@ -2,19 +2,19 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import YouTube from 'react-youtube';
 
-import TopBarVideo from '../../components/student/TopBarVideo';
+import TopBarCourse from '../../components/student/TopBarCourse';
 import SidebarVideoRight from '../../components/student/SidebarVideoRight';
 import VideoRouter from '../../routes/video-route';
 
 // image
 // import ExampleVideo from 'https://www.youtube.com/watch?v=PrA0BUEU1RM';
 
-class DetailVideo extends Component {
+class Course extends Component {
     render() {
         return (
             <div class="detail-video d-flex flex-column">
                 <div class="header">
-                    <TopBarVideo />
+                    <TopBarCourse />
                 </div>
                 <div class="content p-4">
                     <div class="row">
@@ -24,16 +24,16 @@ class DetailVideo extends Component {
                                 <div class="collapse navbar-collapse" id="navbarNav">
                                     <ul class="navbar-nav">
                                         <li class="nav-item mr-3">
-                                            <Link to="/student/detail-video" class="nav-link">Tentang Kelas</Link>
+                                            <Link to="/student/course" class="nav-link">Tentang Kelas</Link>
                                         </li>
                                         <li class="nav-item mr-3">
-                                            <Link to="/student/detail-video/chat-mentor" class="nav-link">Chat Mentor</Link>
+                                            <Link to="/student/course/chat-mentor" class="nav-link">Chat Mentor</Link>
                                         </li>
                                         <li class="nav-item mr-3">
-                                            <Link to="/student/detail-video/forum-class" class="nav-link">Forum Kelas</Link>
+                                            <Link to="/student/course/forum-class" class="nav-link">Forum Kelas</Link>
                                         </li>
                                         <li class="nav-item">
-                                            <Link to="/student/detail-video/file-attachement" class="nav-link">File Terlampir</Link>
+                                            <Link to="/student/course/file-attachement" class="nav-link">File Terlampir</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -43,7 +43,7 @@ class DetailVideo extends Component {
                             </nav>
                             <VideoRouter />
                         </div>
-                        <div class="col-lg-3 sidebar">
+                        <div class="col-lg-3">
                             <SidebarVideoRight />
                         </div>
                     </div>
@@ -54,4 +54,4 @@ class DetailVideo extends Component {
     }
 }
 
-export default DetailVideo;
+export default Course;

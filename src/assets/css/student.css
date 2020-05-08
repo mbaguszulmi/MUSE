@@ -1,0 +1,43 @@
+/* Student */
+
+.sidebar-menu {
+    background-color: #E7EEF7;
+    width: 230px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 111;
+}
+
+.sidebar-menu ul li:hover {
+    background-color: #FF9160;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+
+.sidebar-menu ul li i {
+    margin-right: 10px;
+}
+
+.sidebar-menu ul li a {
+    color: #8F8F90;
+}
+
+.topbar-student {
+    width: 100%;
+    margin-left: 220px;
+    top: 0;
+    z-index: 11;
+}
+
+.topbar-student .icon-search {
+    right: 30px;
+    margin-top: 10px;
+    color: #FF9160;
+}
+
+.topbar-student ul li i {
+    font-size: 18px;
+    margin-left: 5px;
+}

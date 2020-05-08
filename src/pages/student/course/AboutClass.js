@@ -65,7 +65,7 @@ function YourCourses() {
                 <div class="row">
                     <div class="col-lg-7">
                         <p>Pada kelas ini kamu akan mempelajari fundamental dari UI dan UX dengan projek akhir membuat sebuah desain mobile app bertema fintech, kamu akan mempelajari :</p>
-                        <ol class="ml-n4">
+                        <ol class="ml-4">
                             <li>UX Principle</li>
                             <li>UI Principle</li>
                             <li>Materi 3</li>
@@ -84,7 +84,7 @@ function YourRewards() {
                 <h1 class="h4 font-weight-bold">Yang akan kamu dapatkan</h1>
                 <div class="row">
                     <div class="col-lg-7">
-                        <ul class="ml-n4">
+                        <ul class="ml-4">
                             <li class="font-weight-bold">Sertifikat Professional</li>
                             <li class="font-weight-bold">120 video 1080p dan Modul Praktikum</li>
                             <li class="font-weight-bold">Chat dengan mentormu</li>

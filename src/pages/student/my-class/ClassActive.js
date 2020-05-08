@@ -42,7 +42,7 @@ class ClassActive extends Component {
                             <small>8 dari 12 materi telah selesai</small>
                         </div>
                         <div class='col-lg-2 align-self-end d-flex justify-content-end'>
-                            <Link to="/student/detail-video" class='btn button mb-3'>Lanjut</Link>
+                            <Link to="/student/course" class='btn button mb-3'>Lanjut</Link>
                         </div>
                     </div>
                 </div>

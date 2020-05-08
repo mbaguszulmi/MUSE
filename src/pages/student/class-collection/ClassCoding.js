@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import Img from '../../../assets/img/logo.jpeg';
 
@@ -13,7 +14,7 @@ class ClassCoding extends Component {
                             <div class="card-body">
                                 <h5 class="card-title">Fullstack Web Designer-Landing Page</h5>
                                 <p class="card-text">Nicolas Jonathan Doe</p>
-                                <a href="#" class="btn btn-primary">Gratis</a>
+                                <Link to='/student/checkout' class='btn btn-primary'>Gratis</Link>
                             </div>
                         </div>
                     </div>
@@ -24,7 +25,7 @@ class ClassCoding extends Component {
                             <div class="card-body">
                                 <h5 class="card-title">Fullstack Web Designer-Landing Page</h5>
                                 <p class="card-text">Nicolas Jonathan Doe</p>
-                                <a href="#" class="btn btn-primary">Gratis</a>
+                                <Link to="/student/checkout" class="btn btn-primary">Gratis</Link>
                             </div>
                         </div>
                     </div>

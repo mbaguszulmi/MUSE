@@ -9,51 +9,53 @@ class SidebarStudentMenu extends Component {
             <div class='sidebar-menu position-fixed'>
                 <ul class="navbar-nav p-3">
 
-                    <a href="#" class="mb-3"><img src={Brand}></img></a>
+                    <Link to="#" class="mb-3"><img src={Brand}></img></Link>
 
-                    <hr class="sidebar-divider" />
-
-                    <div class="font-weight-bold">
+                    <div class="font-weight-bold mt-4">
                         Menu Utama
                     </div>
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
+                    <li class="nav-item">
+                        <Link class="nav-link" to="/student/my-class">
                             <i class="fas fa-fw fa-book-open"></i>
-                            <span>Kelasku</span></a>
+                            <span>Kelasku</span></Link>
                     </li>
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
+                    <li class="nav-item">
+                        <Link class="nav-link" to="/student/class-collection">
+                            <i class="fas fa-fw fa-book"></i>
+                            <span>Koleksi kelas</span></Link>
+                    </li>
+
+                    <li class="nav-item">
+                        <Link class="nav-link" to="/student/statistics-course">
                             <i class="fas fa-fw fa-chart-bar"></i>
-                            <span>Statistik belajar</span></a>
+                            <span>Statistik belajar</span></Link>
                     </li>
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
+                    <li class="nav-item">
+                        <Link class="nav-link" to="/student/portfolio">
                             <i class="fas fa-fw fa-file-alt"></i>
-                            <span>Portfolio</span></a>
+                            <span>Portfolio</span></Link>
                     </li>
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
+                    <li class="nav-item">
+                        <Link class="nav-link" to="/student/certificate">
                             <i class="fas fa-fw fa-award"></i>
-                            <span>Sertifikat</span></a>
+                            <span>Sertifikat</span></Link>
                     </li>
 
-                    <hr class="sidebar-divider" />
-
-                    <div class="font-weight-bold">
+                    <div class="font-weight-bold mt-4">
                         Akun Saya
                     </div>
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
+                    <li class="nav-item">
+                        <Link class="nav-link" to="/student/edit-profile">
                             <i class="fas fa-fw fa-edit"></i>
-                            <span>Edit profile</span></a>
+                            <span>Edit profile</span></Link>
                     </li>
 
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <Link class="nav-link" to="/">
                             <i class="fas fa-fw fa-sign-out-alt"></i>
                             <span>Keluar</span></Link>

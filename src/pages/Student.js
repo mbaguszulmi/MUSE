@@ -5,7 +5,7 @@ import StudentRouter from '../routes/student-route';
 class Student extends Component {
     render() {
         return (
-            <div class="Student">
+            <div class="student">
                 <StudentRouter />
             </div>
         );

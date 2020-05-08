@@ -8,7 +8,6 @@ import SidebarRight from '../../components/student/SidebarClassRight';
 import Icon1 from '../../assets/icons/icon-class.svg';
 
 import MyClassRouter from '../../routes/myclass-route';
-import StudentRouter from '../../routes/student-route';
 
 class MyClass extends Component {
     render() {
@@ -40,22 +39,22 @@ class MyClass extends Component {
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav">
                                     <li class="nav-item mr-3">
-                                        <Link to="/student" class="nav-link">Kelas aktif</Link>
+                                        <Link to="/student/my-class" class="nav-link">Kelas aktif</Link>
                                     </li>
                                     <li class="nav-item mr-3">
-                                        <Link to="/student/in-progress" class="nav-link">Dalam proses</Link>
+                                        <Link to="/student/my-class/in-progress" class="nav-link">Dalam proses</Link>
                                     </li>
                                     <li class="nav-item mr-3">
-                                        <Link to="/student/class-finished" class="nav-link">Kelas selesai</Link>
+                                        <Link to="/student/my-class/class-finished" class="nav-link">Kelas selesai</Link>
                                     </li>
                                     <li class="nav-item">
-                                        <Link to="/student/my-submission" class="nav-link">Submission Saya</Link>
+                                        <Link to="/student/my-class/my-submission" class="nav-link">Submission Saya</Link>
                                     </li>
                                 </ul>
                             </div>
                         </nav>
-                        <MyClassRouter />
                     </div>
+                    <MyClassRouter />
                 </div>
             </div>
         );

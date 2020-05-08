@@ -1,0 +1,53 @@
+section {
+    margin: 150px 120px 0;
+    color: black;
+    padding-bottom: 100px;
+}
+
+section table {
+    width: 100%;
+}
+section .table {
+    padding: 15px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+section .table:first-child {
+    position: relative;
+    background-color: white;
+    margin-bottom: -5px;
+    z-index: 11;
+}
+section .table:last-child {
+    position: relative;
+    z-index: 1;
+}
+section table .pay-method label {
+    color: black;
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 1.2em;
+    margin: 0;
+    cursor: pointer;
+}
+section table .no-ovo span {
+    color: black;
+    text-transform: uppercase;
+}
+section table .no-ovo input {
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+}
+section .box {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 450px;
+    max-height: 450px;
+}
+section .box img {
+    width: 100%;
+}

@@ -54,7 +54,7 @@ class Login extends Component {
                               </div>
                             </div>
                           </div>
-                          <Link to="/student" id="login-button" class="btn btn-outline-secondary btn-block p-2">
+                          <Link to="/student/my-class" id="login-button" class="btn btn-outline-secondary btn-block p-2">
                             Masuk
                         </Link>
                           <div class="col-lg-12 d-flex justify-content-center mt-2">

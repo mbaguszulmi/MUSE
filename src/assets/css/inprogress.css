@@ -1,0 +1,11 @@
+
+/* in progress */
+.in-progress {
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.in-progress .class-1 {
+    background-color: white;
+    width: 100%;
+}

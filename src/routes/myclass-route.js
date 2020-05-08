@@ -10,10 +10,10 @@ const MyClassRouter = () => {
     return (
 
         <Switch>
-            <Route exact path="/student" component={ClassActive} />
-            <Route path="/student/in-progress" component={InProgress} />
-            <Route path="/student/class-finished" component={ClassFinished} />
-            <Route path="/student/my-submission" component={MySubmission} />
+            <Route exact path="/student/my-class" component={ClassActive}></Route>
+            <Route path="/student/my-class/in-progress" component={InProgress}></Route>
+            <Route path="/student/my-class/class-finished" component={ClassFinished}></Route>
+            <Route path="/student/my-class/my-submission" component={MySubmission}></Route>
         </Switch>
 
     );

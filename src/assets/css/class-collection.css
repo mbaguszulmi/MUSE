@@ -1,0 +1,43 @@
+/* class collection */
+.topbar-class-collection nav {
+    padding: 0 120px;
+}
+
+.topbar-class-collection .icon-search {
+    right: 30px;
+    margin-top: 10px;
+    color: #FF9160;
+}
+
+.topbar-class-collection ul li i {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.class-collection .content {
+    margin-top: 70px;
+}
+
+.class-collection .content ul li:hover {
+    background-color: lightsalmon;
+    border-radius: 8px;
+}
+
+.class-collection #coding:active {
+    background-color: lightsalmon;
+    border-radius: 8px;
+}
+
+.class-collection #design:active {
+    background-color: lightsalmon;
+    border-radius: 8px;
+}
+
+.class-collection #multimedia:active {
+    background-color: lightsalmon;
+    border-radius: 8px;
+}
+
+.class-collection .banner .row {
+    height: 260px;
+}

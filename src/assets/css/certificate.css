@@ -1,0 +1,32 @@
+.certificate .content {
+    margin: 100px 0 0 230px;
+    background-color: #E7EEF7;
+    min-height: 550px;
+    padding-right: 20px;
+}
+
+.certificate .content .table {
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
+    gap: 20px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.certificate .content .list-table button:first-child {
+    background-color: #51A4FF;
+    border-radius: 8px;
+    color: #FFF;
+    margin-right: 10px;
+    padding: 5px 20px;
+    border: none;
+}
+
+.certificate .content .list-table button:last-child {
+    background-color: #FF9160;
+    border-radius: 8px;
+    color: #FFF;
+    padding: 5px 20px;
+    border: none;
+}

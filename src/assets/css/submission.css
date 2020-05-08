@@ -1,0 +1,43 @@
+.my-submission .table-content {
+    padding: 30px 20px 10px 0;
+    background-color: #E7EEF7;
+}
+
+.my-submission .table {
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr .7fr 1fr;
+    gap: 20px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.my-submission .list-table {
+    color: black;
+}
+
+.my-submission .list-table button {
+    border: none;
+}
+
+.my-submission .list-table button:first-child {
+    background-color: #FDE3BD;
+    color: #F6A937;
+    border-radius: 30px;
+}
+
+.my-submission .list-table button:last-child {
+    background-color: #FF9160;
+    border-radius: 10px;
+    color: white;
+}
+
+.my-submission .list-table:nth-child(3) button:first-child {
+    background-color: #C7E1FF;
+    color: #18A0FB;
+}
+
+.my-submission .list-table:nth-child(4) button:first-child {
+    background-color: #FFCDD1;
+    color: #FF6B77;
+}
